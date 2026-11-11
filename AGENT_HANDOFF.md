@@ -39,16 +39,17 @@
 
 ## 🗺️ 3. Status da Jornada (Roadmap do curso.dev)
 
-| Módulo | Descrição | Status |
+| Módulo / Dia | Descrição | Status |
 | :--- | :--- | :--- |
-| **01. Ambiente Local** | WSL 2, Ubuntu, Docker Engine nativo, NVM, Node LTS, Git | ✅ **Concluído** |
-| **02. Setup do Projeto** | `npm init -y`, `package.json`, Next.js do zero, `.gitignore` | ✅ **Concluído** |
-| **03. Primeira Página** | `pages/index.js`, Fast Refresh no `http://localhost:3000` | ✅ **Concluído** (commit `932fd2f`) |
-| **04. Deploy Contínuo** | Configuração e deploy na **Vercel** | ⏳ **PRÓXIMO PASSO** |
-| **05. Banco de Dados** | Docker Compose com PostgreSQL local | ⏳ Pendente |
-| **06. Migrations** | `node-pg-migrate` e modelagem | ⏳ Pendente |
-| **07. Testes Automatizados** | Jest, orquestração e GitHub Actions | ⏳ Pendente |
-| **08. Core do TabNews** | APIs, autenticação, posts e frontend completo | ⏳ Pendente |
+| **Dia 01. Ambiente Local** | WSL 2, Ubuntu, Docker Engine nativo, NVM, Node LTS, Git | ✅ **Concluído** |
+| **Dia 02. Setup do Projeto** | `npm init -y`, `package.json`, Next.js do zero, `.gitignore` | ✅ **Concluído** |
+| **Dia 03. Primeira Página** | `pages/index.js`, Fast Refresh no `http://localhost:3000` | ✅ **Concluído** (commit `932fd2f`) |
+| **Dia 04. Deploy Contínuo** | Conta Vercel, integração GitHub e CD automático | ✅ **Concluído** (commit `52a2f26`) |
+| **Dia 05. Git a Fundo** | Snapshots, Diffs, 3 Estágios e `git commit --amend` | ✅ **Concluído** (commit `6c8a8f1`) |
+| **Dia 06. Próximo Passo** | Primeira Rota de API / Banco de Dados / Próximo módulo | ⏳ **PRÓXIMO PASSO** |
+| **Futuro. Banco & Migrations** | Docker Compose PostgreSQL, `node-pg-migrate` | ⏳ Pendente |
+| **Futuro. Testes Automatizados** | Jest, orquestração e GitHub Actions | ⏳ Pendente |
+| **Futuro. Core do TabNews** | APIs, autenticação, posts e frontend completo | ⏳ Pendente |
 
 ---
 
@@ -77,10 +78,26 @@
   - Inicialização do projeto Next.js do zero com `package.json` limpo e `.gitignore` protegido (`node_modules`, `.next`).
   - Criação da primeira rota `pages/index.js` renderizando no navegador.
   - Primeiro commit profissional realizado e sincronizado no GitHub (`feat: adiciona Next.js e cria primeira pagina`).
+
+### Sessão 02 — 11/11/2026 (Máquina: Estágio)
+- **Tutor:** Antigravity (Pair Programming / Tutor curso.dev)
+- **O que foi feito:**
+  - **Módulo / Dia 04 (Deploy Contínuo na Vercel):**
+    - Cadastro e configuração da conta Vercel (plano Hobby) integrada ao GitHub (`GuilhermeSilva-25`).
+    - Importação do repositório `clone-tabnews` com detecção automática do framework Next.js.
+    - Primeiro deploy em produção com sucesso (URL pública, HTTPS e CDN Edge).
+    - Validação prática do pipeline de CD: alteração de frase em `pages/index.js` (Sêneca), commit semântico (`52a2f26 feat: atualiza mensagem da pagina inicial`), push e deploy automático imediato na Vercel via Webhook.
+  - **Módulo / Dia 05 (Git a Fundo e Prática Avançada):**
+    - Desmistificação do funcionamento interno do Git: banco de dados local na pasta `.git`, operação 100% offline.
+    - O "Plot Twist" dos snapshots vs deltas ("Jogo dos 7 Erros") e leitura técnica de cabeçalhos de diff (`a/`, `b/`, hunk header `@@ -1,5 +1,5 @@`).
+    - Domínio dos 3 estágios: *Working Directory* ➔ *Staging Area (Index)* ➔ *Repository*.
+    - Pegadinha do `git diff` resolvida na prática: entendimento de que `git diff` compara Working Tree com Staging Area, enquanto `git diff --staged` compara Staging Area com HEAD.
+    - Uso prático de `git commit --amend`: inclusão de esquecimento intencional no `README.md`, substituição do snapshot, compreensão da alteração do HASH criptográfico (SHA-1) e assimilação da Regra de Ouro (nunca dar amend em commits já publicados).
+    - Commit semântico finalizado e enviado com sucesso para o GitHub: `6c8a8f1 docs: adiciona descricao e link do tabnews no README`.
 - **Próxima Ação Imediata (para o tutor de casa):**
-  - O Guilherme vai abrir o projeto no PC de casa.
-  - Se a máquina de casa ainda não tiver WSL/Node/Docker, auxiliá-lo a clonar e configurar o ambiente. Se já tiver, apenas dar `git pull`.
-  - Iniciar a aula de **Deploy na Vercel** (conectar o repositório GitHub à Vercel para publicação automática a cada push).
+  - O Guilherme vai abrir o projeto no computador de casa.
+  - No terminal do Ubuntu/WSL em casa, rodar `git pull` para sincronizar os commits do Dia 04 (`52a2f26`), Dia 05 (`6c8a8f1`) e este handoff atualizado.
+  - Iniciar o **Dia 06 do curso.dev** (alinhar o material do Dia 06 com o Guilherme — normalmente Primeira Rota de API `/api/v1/status` e/ou introdução a Banco de Dados com Docker Compose).
 
 ---
-*(Próximo agente: adicione a "Sessão 02" abaixo ao encerrar sua jornada em casa!)*
+*(Próximo agente: adicione a "Sessão 03" abaixo ao encerrar sua jornada em casa!)*
