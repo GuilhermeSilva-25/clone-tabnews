@@ -1,5 +1,5 @@
 function Home() {
-    return <h1>"Não somos carentes de tempo, mas o desperdiçamos!"</h1>;
+    return <h1>"Todos deveriam aprender a programar, porque isso ensina a pensar." — Steve Jobs</h1>;
 }
 
 export default Home;
