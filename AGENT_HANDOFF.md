@@ -46,7 +46,8 @@
 | **Dia 03. Primeira Página** | `pages/index.js`, Fast Refresh no `http://localhost:3000` | ✅ **Concluído** (commit `932fd2f`) |
 | **Dia 04. Deploy Contínuo** | Conta Vercel, integração GitHub e CD automático | ✅ **Concluído** (commit `52a2f26`) |
 | **Dia 05. Git a Fundo** | Snapshots, Diffs, 3 Estágios e `git commit --amend` | ✅ **Concluído** (commit `6c8a8f1`) |
-| **Dia 06. Próximo Passo** | Primeira Rota de API / Banco de Dados / Próximo módulo | ⏳ **PRÓXIMO PASSO** |
+| **Dia 06. Git Remoto & Push** | `git push`, `main` vs `origin/main`, `rebase` e `git push --force` | ✅ **Concluído** (commit `4d0c67f`) |
+| **Dia 07. Próximo Passo** | Primeira Rota de API / Protocolo HTTP / Próximo módulo | ⏳ **PRÓXIMO PASSO** |
 | **Futuro. Banco & Migrations** | Docker Compose PostgreSQL, `node-pg-migrate` | ⏳ Pendente |
 | **Futuro. Testes Automatizados** | Jest, orquestração e GitHub Actions | ⏳ Pendente |
 | **Futuro. Core do TabNews** | APIs, autenticação, posts e frontend completo | ⏳ Pendente |
@@ -99,5 +100,18 @@
   - No terminal do Ubuntu/WSL em casa, rodar `git pull` para sincronizar os commits do Dia 04 (`52a2f26`), Dia 05 (`6c8a8f1`) e este handoff atualizado.
   - Iniciar o **Dia 06 do curso.dev** (alinhar o material do Dia 06 com o Guilherme — normalmente Primeira Rota de API `/api/v1/status` e/ou introdução a Banco de Dados com Docker Compose).
 
+### Sessão 03 — 12-13/11/2026 (Máquina: Casa / ESQUIVEL)
+- **Tutor:** Antigravity (Tutor curso.dev)
+- **O que foi feito:**
+  - **Módulo / Dia 06 (Git Remoto, Linhas do Tempo e Push Force):**
+    - Entendimento conceitual de `origin` como alias do repositório remoto e distinção dos ponteiros `main` (local) vs `origin/main` (rastreador remoto).
+    - Descolamento de ponteiros comprovado na prática via `git log --graph` ao commitar localmente mantendo `origin/main` no passado.
+    - **Momento de Ouro / Resolução de Divergência Real:** Ocorrência prática de histórico divergente (formato em "Y" com bifurcação de commits) após alteração local antes de pull da sessão anterior. Diagnóstico do erro `rejected (non-fast-forward)`.
+    - Aplicação de `git pull --rebase` para unificar a árvore em linha reta sem nós (Fast-Forward), entendendo a recalculação do hash SHA-1 da nova base.
+    - **Prática da Aula 6.4 (O perigo do `--force`):** Uso de `git commit --amend` pós-push gerando nova divergência, validação da rejeição de segurança do Git e execução consciente de `git push --force` (`+ 860a29b...4d0c67f main -> main (forced update)`).
+    - Fixação da Regra de Ouro: nunca usar `--force` em branches compartilhadas (equipes/main), restringindo seu uso para branches isoladas de feature.
+- **Próxima Ação Imediata:**
+  - Iniciar o **Dia 07 do curso.dev** (alinhar o próximo tópico com o Guilherme — normalmente Protocolo HTTP e primeira rota de API `/api/v1/status`).
+
 ---
-*(Próximo agente: adicione a "Sessão 03" abaixo ao encerrar sua jornada em casa!)*
+*(Próximo agente: adicione a "Sessão 04" abaixo ao encerrar sua jornada!)*
