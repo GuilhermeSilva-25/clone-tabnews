@@ -4,7 +4,7 @@
 > Você está atuando como **Mentor e Guia de Aprendizado** do desenvolvedor **Guilherme** no **curso.dev** (do Filipe Deschamps), desenvolvendo o projeto **`clone-tabnews`**.
 >
 > **LEIA ESTE ARQUIVO COM ATENÇÃO ANTES DE RESPONDER.**
-> Ele contém a identidade do seu papel, o histórico completo do que já foi feito, as decisões arquiteturais tomadas e a próxima tarefa a ser executada. Ao final de cada sessão, atualize o bloco de *Notas de Sessão* para manter a continuidade perfeita entre o computador de casa e o do estágio.
+> Ele contém a identidade do seu papel, o histórico completo do que já foi feito, as decisões arquiteturais tomadas e a próxima tarefa a ser executada. Ao final de cada sessão, atualize o bloco de *Notas de Sessão* para manter a continuidade perfeita do projeto.
 
 ---
 
@@ -33,7 +33,7 @@
 - **Git & GitHub:**
   - Repositório remoto: `https://github.com/GuilhermeSilva-25/clone-tabnews.git`
   - Conexão configurada via **HTTPS com Git Credential Manager** (`/mnt/c/Program Files/Git/mingw64/bin/git-credential-manager.exe`).
-  - *Nota importante:* Na máquina do estágio a porta 22 (SSH) estava bloqueada pela rede, por isso o HTTPS com GCM foi adotado como padrão estável.
+  - *Nota:* Conexão configurada via HTTPS com Git Credential Manager adotada como padrão estável.
 
 ---
 
@@ -48,7 +48,9 @@
 | **Dia 05. Git a Fundo** | Snapshots, Diffs, 3 Estágios e `git commit --amend` | ✅ **Concluído** (commit `6c8a8f1`) |
 | **Dia 06. Git Remoto & Push** | `git push`, `main` vs `origin/main`, `rebase` e `git push --force` | ✅ **Concluído** (commit `4d0c67f`) |
 | **Dia 07. Client/Server & Deploy** | Modelagem Client/Server, URLs imutáveis Vercel, Desafio 7.5 | ✅ **Concluído** (commit `ff50cc3`) |
-| **Dia 08. Próximo Passo** | Primeira Rota de API / Protocolo HTTP / Próximo módulo | ⏳ **PRÓXIMO PASSO** |
+| **Dia 08. Mentalidade Técnica** | Programação "Orgânica" vs "Impressora 3D", ciclos curtos | ✅ **Concluído** |
+| **Dia 09. Gestão & Milestones** | Minimalismo, quebra em tarefas, Milestones e Issues no GitHub | ⏳ **A EXECUTAR (Issues)** |
+| **Dia 10. Próximo Passo** | Domínio / EditorConfig / Página Em Construção | ⏳ Pendente |
 | **Futuro. Banco & Migrations** | Docker Compose PostgreSQL, `node-pg-migrate` | ⏳ Pendente |
 | **Futuro. Testes Automatizados** | Jest, orquestração e GitHub Actions | ⏳ Pendente |
 | **Futuro. Core do TabNews** | APIs, autenticação, posts e frontend completo | ⏳ Pendente |
@@ -70,7 +72,7 @@
 
 ## 📝 5. Diário de Bordo (Session Handoff Log)
 
-### Sessão 01 — 10/11/2026 (Máquina: Estágio)
+### Sessão 01 — 10/11/2026
 - **Tutor:** Antigravity (Sessão inicial)
 - **O que foi feito:**
   - Instalação e ativação do WSL 2 e distribuição Ubuntu.
@@ -81,7 +83,7 @@
   - Criação da primeira rota `pages/index.js` renderizando no navegador.
   - Primeiro commit profissional realizado e sincronizado no GitHub (`feat: adiciona Next.js e cria primeira pagina`).
 
-### Sessão 02 — 11/11/2026 (Máquina: Estágio)
+### Sessão 02 — 11/11/2026
 - **Tutor:** Antigravity (Pair Programming / Tutor curso.dev)
 - **O que foi feito:**
   - **Módulo / Dia 04 (Deploy Contínuo na Vercel):**
@@ -96,12 +98,10 @@
     - Pegadinha do `git diff` resolvida na prática: entendimento de que `git diff` compara Working Tree com Staging Area, enquanto `git diff --staged` compara Staging Area com HEAD.
     - Uso prático de `git commit --amend`: inclusão de esquecimento intencional no `README.md`, substituição do snapshot, compreensão da alteração do HASH criptográfico (SHA-1) e assimilação da Regra de Ouro (nunca dar amend em commits já publicados).
     - Commit semântico finalizado e enviado com sucesso para o GitHub: `6c8a8f1 docs: adiciona descricao e link do tabnews no README`.
-- **Próxima Ação Imediata (para o tutor de casa):**
-  - O Guilherme vai abrir o projeto no computador de casa.
-  - No terminal do Ubuntu/WSL em casa, rodar `git pull` para sincronizar os commits do Dia 04 (`52a2f26`), Dia 05 (`6c8a8f1`) e este handoff atualizado.
-  - Iniciar o **Dia 06 do curso.dev** (alinhar o material do Dia 06 com o Guilherme — normalmente Primeira Rota de API `/api/v1/status` e/ou introdução a Banco de Dados com Docker Compose).
+- **Próxima Ação Imediata:**
+  - Sincronizar o repositório local via `git pull` e iniciar o Dia 06.
 
-### Sessão 03 — 12-13/11/2026 (Máquina: Casa / ESQUIVEL)
+### Sessão 03 — 12-13/11/2026
 - **Tutor:** Antigravity (Tutor curso.dev)
 - **O que foi feito:**
   - **Módulo / Dia 06 (Git Remoto, Linhas do Tempo e Push Force):**
@@ -115,8 +115,18 @@
     - Consolidação do modelo mental de Client e Server como papéis flexíveis e contextuais (e não entidades físicas fixas).
     - Entendimento sobre o ecossistema de deploy contínuo (CD), URLs de produção vs URLs imutáveis de deploy na Vercel e o mecanismo de *Deployment Protection*.
     - Execução autônoma do Desafio 7.5: atualização de `pages/index.js` com a frase de Steve Jobs (*"Todos deveriam aprender a programar, porque isso ensina a pensar."*), commit semântico (`ff50cc3 feat: atualiza mensagem da pagina inicial`), push e validação do deploy em produção.
+  - **Módulo / Dia 08 (Mentalidade Técnica e Programação Orgânica):**
+    - Absorção do modelo de Programação Orgânica vs Impressora 3D (sistemas vivos, iterativos e com ciclos curtos de entrega).
+    - Desmistificação do sucesso em software: contato com a realidade rápido, feedback contínuo e respeito aos fundamentos.
+  - **Módulo / Dia 09 (Gestão Minimalista, Dopamina e GitHub Milestones):**
+    - Aulas 9.1 a 9.4 assistidas: entendimento sobre a neurobiologia da motivação (dopamina na conclusão de tarefas pequenas) e o perigo do "tudo ou nada".
+    - Princípio do minimalismo em gestão de projetos: manter tarefas e marcos centralizados diretamente no GitHub.
 - **Próxima Ação Imediata:**
-  - Iniciar o **Dia 08 do curso.dev** (alinhar o próximo tópico com o Guilherme — normalmente Protocolo HTTP, primeira rota de API `/api/v1/status` ou Banco de Dados).
+  - No GitHub (`https://github.com/GuilhermeSilva-25/clone-tabnews`), criar a **Milestone 0: Em construção** e abrir as 3 issues vinculadas a ela:
+    1. `Colocar o site num domínio .com.br`
+    2. `Definir estilização do código e configurar editor`
+    3. `Programar página de "Em construção"`
+  - Iniciar a execução das tarefas e seguir para o Dia 10 do curso.dev.
 
 ---
 *(Próximo agente: adicione a "Sessão 04" abaixo ao encerrar sua jornada!)*
