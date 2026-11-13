@@ -47,7 +47,8 @@
 | **Dia 04. Deploy Contínuo** | Conta Vercel, integração GitHub e CD automático | ✅ **Concluído** (commit `52a2f26`) |
 | **Dia 05. Git a Fundo** | Snapshots, Diffs, 3 Estágios e `git commit --amend` | ✅ **Concluído** (commit `6c8a8f1`) |
 | **Dia 06. Git Remoto & Push** | `git push`, `main` vs `origin/main`, `rebase` e `git push --force` | ✅ **Concluído** (commit `4d0c67f`) |
-| **Dia 07. Próximo Passo** | Primeira Rota de API / Protocolo HTTP / Próximo módulo | ⏳ **PRÓXIMO PASSO** |
+| **Dia 07. Client/Server & Deploy** | Modelagem Client/Server, URLs imutáveis Vercel, Desafio 7.5 | ✅ **Concluído** (commit `ff50cc3`) |
+| **Dia 08. Próximo Passo** | Primeira Rota de API / Protocolo HTTP / Próximo módulo | ⏳ **PRÓXIMO PASSO** |
 | **Futuro. Banco & Migrations** | Docker Compose PostgreSQL, `node-pg-migrate` | ⏳ Pendente |
 | **Futuro. Testes Automatizados** | Jest, orquestração e GitHub Actions | ⏳ Pendente |
 | **Futuro. Core do TabNews** | APIs, autenticação, posts e frontend completo | ⏳ Pendente |
@@ -110,8 +111,12 @@
     - Aplicação de `git pull --rebase` para unificar a árvore em linha reta sem nós (Fast-Forward), entendendo a recalculação do hash SHA-1 da nova base.
     - **Prática da Aula 6.4 (O perigo do `--force`):** Uso de `git commit --amend` pós-push gerando nova divergência, validação da rejeição de segurança do Git e execução consciente de `git push --force` (`+ 860a29b...4d0c67f main -> main (forced update)`).
     - Fixação da Regra de Ouro: nunca usar `--force` em branches compartilhadas (equipes/main), restringindo seu uso para branches isoladas de feature.
+  - **Módulo / Dia 07 (Client e Server, Vercel e Desafio da Frase):**
+    - Consolidação do modelo mental de Client e Server como papéis flexíveis e contextuais (e não entidades físicas fixas).
+    - Entendimento sobre o ecossistema de deploy contínuo (CD), URLs de produção vs URLs imutáveis de deploy na Vercel e o mecanismo de *Deployment Protection*.
+    - Execução autônoma do Desafio 7.5: atualização de `pages/index.js` com a frase de Steve Jobs (*"Todos deveriam aprender a programar, porque isso ensina a pensar."*), commit semântico (`ff50cc3 feat: atualiza mensagem da pagina inicial`), push e validação do deploy em produção.
 - **Próxima Ação Imediata:**
-  - Iniciar o **Dia 07 do curso.dev** (alinhar o próximo tópico com o Guilherme — normalmente Protocolo HTTP e primeira rota de API `/api/v1/status`).
+  - Iniciar o **Dia 08 do curso.dev** (alinhar o próximo tópico com o Guilherme — normalmente Protocolo HTTP, primeira rota de API `/api/v1/status` ou Banco de Dados).
 
 ---
 *(Próximo agente: adicione a "Sessão 04" abaixo ao encerrar sua jornada!)*
