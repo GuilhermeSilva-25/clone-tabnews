@@ -122,6 +122,21 @@
     - Aulas 9.1 a 9.4 assistidas: entendimento sobre a neurobiologia da motivação (dopamina na conclusão de tarefas pequenas) e o perigo do "tudo ou nada".
     - Princípio do minimalismo em gestão de projetos: manter tarefas e marcos centralizados diretamente no GitHub.
 - **Próxima Ação Imediata:**
+  - Setup do ambiente na máquina de casa e criação da Milestone 0 / Issues no GitHub.
+
+### Sessão 04 — 13/11/2026
+- **Tutor:** Antigravity (Tutor curso.dev)
+- **O que foi feito:**
+  - **Setup Completo do Ambiente Local na Máquina Pessoal:**
+    - Diagnóstico do sistema operacional e detecção de dependências existentes.
+    - Instalação e ativação da distribuição **Ubuntu** no **WSL 2**.
+    - Instalação da extensão oficial do **WSL** (`ms-vscode-remote.remote-wsl`) no VS Code.
+    - Instalação do **NVM** (`v0.40.1`), Node.js LTS (`v26.13.1`) e npm (`11.20.0`) no Ubuntu.
+    - Configuração de identidade do Git (`Guilherme Silva` / `guime.silva333@gmail.com`) e integração nativa com o **Git Credential Manager** do Windows (`ucrt64/bin`).
+    - Clonagem do repositório no sistema de arquivos nativo do Linux (`~/clone-tabnews`), eliminando gargalos de I/O e prevenindo conflitos com o OneDrive.
+    - Resolução de dependências com `npm install` e validação com sucesso do servidor Fast Refresh do Next.js via `npm run dev` na porta 3000.
+    - Paridade 100% atingida entre a máquina do estágio e a máquina de casa.
+- **Próxima Ação Imediata:**
   - No GitHub (`https://github.com/GuilhermeSilva-25/clone-tabnews`), criar a **Milestone 0: Em construção** e abrir as 3 issues vinculadas a ela:
     1. `Colocar o site num domínio .com.br`
     2. `Definir estilização do código e configurar editor`
@@ -129,4 +144,4 @@
   - Iniciar a execução das tarefas e seguir para o Dia 10 do curso.dev.
 
 ---
-*(Próximo agente: adicione a "Sessão 04" abaixo ao encerrar sua jornada!)*
+*(Próximo agente: adicione a "Sessão 05" abaixo ao encerrar sua jornada!)*
