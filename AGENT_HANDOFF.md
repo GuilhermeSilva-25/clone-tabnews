@@ -49,8 +49,8 @@
 | **Dia 06. Git Remoto & Push** | `git push`, `main` vs `origin/main`, `rebase` e `git push --force` | ✅ **Concluído** (commit `4d0c67f`) |
 | **Dia 07. Client/Server & Deploy** | Modelagem Client/Server, URLs imutáveis Vercel, Desafio 7.5 | ✅ **Concluído** (commit `ff50cc3`) |
 | **Dia 08. Mentalidade Técnica** | Programação "Orgânica" vs "Impressora 3D", ciclos curtos | ✅ **Concluído** |
-| **Dia 09. Gestão & Milestones** | Minimalismo, quebra em tarefas, Milestones e Issues no GitHub | ⏳ **A EXECUTAR (Issues)** |
-| **Dia 10. Próximo Passo** | Domínio / EditorConfig / Página Em Construção | ⏳ Pendente |
+| **Dia 09. Gestão & Milestones** | Minimalismo, quebra em tarefas, Milestones e Issues no GitHub | ✅ **Concluído** |
+| **Dia 10. Próximo Passo** | Domínio / EditorConfig / Página Em Construção | ⏳ **A EXECUTAR** |
 | **Futuro. Banco & Migrations** | Docker Compose PostgreSQL, `node-pg-migrate` | ⏳ Pendente |
 | **Futuro. Testes Automatizados** | Jest, orquestração e GitHub Actions | ⏳ Pendente |
 | **Futuro. Core do TabNews** | APIs, autenticação, posts e frontend completo | ⏳ Pendente |
@@ -136,12 +136,16 @@
     - Clonagem do repositório no sistema de arquivos nativo do Linux (`~/clone-tabnews`), eliminando gargalos de I/O e prevenindo conflitos com o OneDrive.
     - Resolução de dependências com `npm install` e validação com sucesso do servidor Fast Refresh do Next.js via `npm run dev` na porta 3000.
     - Paridade 100% atingida entre a máquina do estágio e a máquina de casa.
+  - **Módulo / Dia 09 (Gestão & Milestones - Conclusão Prática):**
+    - Criação da **Milestone 0: Em construção** no repositório GitHub.
+    - Abertura e vinculação das 3 primeiras issues à Milestone 0:
+      - Issue #1: `Colocar o site num domínio .com.br`
+      - Issue #2: `Definir estilização do código e configurar editor`
+      - Issue #3: `Programar página de "Em construção"`
+    - Fixação do modelo de gestão minimalista: centralização do ciclo de vida do projeto no GitHub e foco em ciclos curtos de entrega.
 - **Próxima Ação Imediata:**
-  - No GitHub (`https://github.com/GuilhermeSilva-25/clone-tabnews`), criar a **Milestone 0: Em construção** e abrir as 3 issues vinculadas a ela:
-    1. `Colocar o site num domínio .com.br`
-    2. `Definir estilização do código e configurar editor`
-    3. `Programar página de "Em construção"`
-  - Iniciar a execução das tarefas e seguir para o Dia 10 do curso.dev.
+  - Iniciar a resolução das tarefas da Milestone 0 pelo **Dia 10**:
+    - Analisar a Issue #1 (estratégia de domínio) ou avançar para a Issue #2 (`.editorconfig`).
 
 ---
 *(Próximo agente: adicione a "Sessão 05" abaixo ao encerrar sua jornada!)*
